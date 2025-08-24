@@ -15,7 +15,7 @@
 
     --font-dm-sans: DM Sans, sans-serif;
 
-    --breakpoint-xs: 300px;
+    --breakpoint-xs: 360px;
 
     --background-image-hero-pattern: url('/hero-bg.png');
 }
@@ -28,8 +28,9 @@
     }
 
     h1 {
-        @apply mx-auto max-w-4xl text-center text-5xl leading-tight font-bold tracking-[-1%] text-white sm:text-[64px] sm:leading-[76px];
+        @apply mx-auto max-w-4xl text-center text-3xl leading-tight font-bold tracking-[-1%] text-white sm:text-[45px] sm:leading-[76px];
     }
+ 
 
     h2 {
         @apply text-2xl font-bold text-white sm:text-3xl;
@@ -54,7 +55,7 @@
     }
 
     .wrapper {
-        @apply xs:p-10 relative z-10 mx-auto flex max-w-7xl flex-col px-5 py-12;
+        @apply xs:p-5 relative z-10 mx-auto flex max-w-7xl flex-col px-5 py-12;
     }
 
     .trending {
@@ -65,7 +66,7 @@
         }
 
         & ul li {
-            @apply flex min-w-[230px] flex-row items-center;
+            @apply flex min-w-[200px] flex-row items-center;
         }
 
         & ul li p {
@@ -73,23 +74,23 @@
         }
 
         & ul li img {
-            @apply -ml-3.5 h-[163px] w-[127px] rounded-lg object-cover;
+            @apply -ml-3.5 h-[162px] w-[127px] rounded-lg object-cover;
         }
     }
 
     .search {
-        @apply bg-light-100/5 mx-auto mt-10 w-full max-w-3xl rounded-lg px-4 py-3;
+        @apply  bg-light-100 mx-auto mt-10 w-full max-w-3xl rounded-lg px-4 py-3 lg:bg-light-100/5 ;
 
         & div {
             @apply relative flex items-center;
         }
 
         & img {
-            @apply absolute left-2 h-5 w-5;
+            @apply absolute left-2 h-5 w-5 xs:h-4 xs:w-4;
         }
 
         & input {
-            @apply placeholder-light-200 w-full bg-transparent py-2 pl-10 text-base text-gray-200 outline-hidden sm:pr-10;
+            @apply placeholder-light-200 w-full bg-transparent py-2 pl-10 text-base text-gray-200 outline-hidden sm:pr-10 xs:text-[15px] xs:pl-7;
         }
     }
 
@@ -97,35 +98,35 @@
         @apply space-y-9;
 
         & ul {
-            @apply xs:grid-cols-2 grid grid-cols-1 gap-5 md:grid-cols-3 lg:grid-cols-4;
+            @apply xs:grid-cols-2 grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-4;
         }
     }
 
     .movie-card {
-        @apply bg-dark-100 shadow-light-100/10 rounded-2xl p-5 shadow-inner;
+        @apply bg-dark-100 shadow-light-100/10 rounded-2xl p-3 shadow-inner;
 
         & img {
             @apply h-auto w-full rounded-lg;
         }
 
         & h3 {
-            @apply line-clamp-1 text-base font-bold text-white;
+            @apply line-clamp-1 font-bold text-white text-sm xs:text-[13px] lg:text-[18px];
         }
 
         & .content {
-            @apply mt-2 flex flex-row flex-wrap items-center gap-2;
+            @apply mt-2 flex flex-row flex-wrap items-center gap-2 xs:text-[12px] lg:text-[18px];
         }
 
         & .rating {
-            @apply flex flex-row items-center gap-1;
+            @apply flex flex-row items-center gap-1 xs:text-[12px] lg:text-[18px];
         }
 
         & .rating img {
-            @apply size-4 object-contain;
+            @apply size-4 object-contain xs:size-3 xs:size-4;
         }
 
         & .rating p {
-            @apply text-base font-bold text-white;
+            @apply text-base font-bold text-white xs:text-[12px] lg:text-[18px];
         }
 
         & .content span {
@@ -133,11 +134,11 @@
         }
 
         & .content .lang {
-            @apply text-base font-medium text-gray-100 capitalize;
+            @apply text-base font-medium text-gray-100 capitalize xs:text-[12px] lg:text-[18px];
         }
 
         & .content .year {
-            @apply text-base font-medium text-gray-100;
+            @apply text-base font-medium text-gray-100 xs:text-[12px] lg:text-[18px];
         }
     }
 }
