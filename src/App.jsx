@@ -14,6 +14,7 @@ const API_OPTIONS = {
     headers: {
         Authorization: `Bearer ${API_KEY}`,
         accept: 'application/json',
+        
     },
 };
 
