@@ -85,7 +85,7 @@ function App() {
                 <header>
                     <img src="./hero.png" alt="Hero Banner" />
                     <h1>
-                        Hello <span className="text-gradient">Movies</span>{' '}
+                        Find <span className="text-gradient">Movies</span>{' '}
                         You'll Love Without Hassle
                     </h1>
                     <Search
